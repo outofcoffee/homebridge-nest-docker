@@ -4,11 +4,11 @@ Dockerfile for Homebridge + Nest plugin
 
 ## Build
 
-    docker build . --tag outofcoffee/homebridge-nest
+    docker-compose build
 
 ## Run
 
-    docker run -it --net=host -v ~/.homebridge:/home/homebridge/.homebridge outofcoffee/homebridge-nest
+    docker-compose up -d
 
 ## Limitations
 

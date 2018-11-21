@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  homebridge:
+    image: outofcoffee/homebridge-nest
+    build: .
+    network_mode: host
+    restart: always
+    volumes:
+    - "~/.homebridge:/home/homebridge/.homebridge"
